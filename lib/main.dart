@@ -2,8 +2,10 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:rabiull_hassan_birthday/second_screen.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart' as my_clipper;
 import 'package:confetti/confetti.dart';
+import 'package:rabiull_hassan_birthday/shake_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -80,7 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){
-          //Navigator.push(context, MaterialPageRoute(builder: (context) => const NextScreen()));
+          Navigator.push(context, MaterialPageRoute(builder: (context) => const SecondScreen()));
         },
         backgroundColor: Color.fromARGB(184, 6, 35, 202),
         tooltip: 'Start Wishing...!',
@@ -147,7 +149,14 @@ class _MyHomePageState extends State<MyHomePage> {
                    Text("Happy",style: TextStyle(color: Color(0xff13195b),fontWeight: FontWeight.w900,fontSize: 80),),
                    SizedBox(height: 2,),
                    Text("BirthDay",style: TextStyle(color: Color(0xff13195b),fontWeight: FontWeight.w900,fontSize: 40),),
-                   
+                   SizedBox(height: 40,),
+                   ShakeWidget(child: Text(
+                    "Rabiul Hassan.", style: TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(255, 243, 19, 19),
+                      fontFamily: 'OleoScript'),)
+                    ),
                  ],
                ),
              )
