@@ -1,5 +1,7 @@
 # rabiull_hassan_birthday
 
+I'm wishing to my best friend rabiulhassandev using flutter. Birthday wishing App Using Flutter.
+
 A new Flutter project.
 
 ## Getting Started
